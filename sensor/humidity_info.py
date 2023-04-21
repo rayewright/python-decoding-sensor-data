@@ -4,7 +4,7 @@ from datetime import date, datetime
 class HumidityData(HouseInfo):
 
     def _convert_data(self, data):
-        recs = list()
+        recs = []
         for rec in data:
             recs.append(float(rec)*100)
         return recs 
